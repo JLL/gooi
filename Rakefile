@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Goi::Application.load_tasks
+Gooi::Application.load_tasks
