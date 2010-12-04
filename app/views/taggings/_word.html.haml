@@ -1,0 +1,5 @@
+%div(class='span-6 colborder prepend-1')= word.name
+%div(class='span-13 colborder')= word.tags.empty? ? "No tag" : word.tag_list
+%div(class='span-2 last')
+  = check_box_tag("word[#{word.id}]", false)
+%hr

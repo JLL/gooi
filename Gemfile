@@ -29,3 +29,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem 'acts-as-taggable-on'
+gem 'haml'
+gem 'jquery-rails'
+gem 'will_paginate', "3.0.pre2"

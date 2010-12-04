@@ -1,0 +1,18 @@
+%h2 Words
+= form_for @word do |f|
+  %div(class='span-23 prepend-1 prepend-top append-bottom panel')
+    %div(class='span-6 colborder')
+      %h6 English
+      = f.text_field :name
+    %div(class='span-6 colborder')
+      %h6 French
+      = f.text_field :name_fr
+    %div(class='span-6 colborder')
+      %h6 Japanese
+      = f.text_field :name_ja
+    %div(class='span-2 last')
+      %h6 &nbsp;
+      = submit_tag('Add')
+%hr.space
+= render :partial => '/words/word', :collection => @words
+= will_paginate(@words)

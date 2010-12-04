@@ -1,0 +1,4 @@
+%h2= params[:id].capitalize
+%hr
+= render :partial => '/tags/word', :collection => @words
+= will_paginate(@words)

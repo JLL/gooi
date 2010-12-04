@@ -12,6 +12,15 @@ Goi::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :words do
+  end
+  
+  resources :tags do
+  end
+  
+  resources :taggings do
+    put :massive_update, :on => :collection
+  end
 
   # Sample resource route with options:
   #   resources :products do

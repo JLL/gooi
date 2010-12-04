@@ -1,0 +1,6 @@
+%div(class='span-6 colborder prepend-1')= tag.name
+%div(class='span-6 colborder')= tag.name_fr
+%div(class='span-6 colborder')= tag.name_ja
+%div(class='span-2 last')
+  = button_to('Delete', tag_path(tag), :method => :delete)
+%hr
