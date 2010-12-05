@@ -33,3 +33,4 @@ gem 'acts-as-taggable-on'
 gem 'haml'
 gem 'jquery-rails'
 gem 'will_paginate', "3.0.pre2"
+gem 'omniauth'

@@ -7,6 +7,13 @@
     = csrf_meta_tag
     %body
       .container
-        .header= image_tag("logo.png")
+        #user_nav(class="right")
+          - if current_user
+            Welcome, #{current_user.name} | #{link_to("Sign out", signout_path)}
+          - else
+            #{link_to("Sign in with Facebook", "/auth/facebook")} | #{link_to("Sign in with Twitter", "/auth/twitter")}
+        = image_tag("logo.png")
+        - flash.each do |name, message|
+          %div(class="#{name}")= message
         = yield
     %footer © 2010 Studio Kurage. All Rights Reserved.
