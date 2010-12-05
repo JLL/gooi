@@ -9,4 +9,4 @@ You can find a demonstration [here](http://gooi.heroku.com)
 
 ## License
 
-OmniAuth is licensed under the MIT License.
+GOOI is licensed under the MIT License.
