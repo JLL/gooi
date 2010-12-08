@@ -1,7 +1,15 @@
 %h2 Taggings
 = form_tag massive_update_taggings_path, :method => :put do
-  = render :partial => 'taggings/word', :collection => @words
+  %h3 Taggings List
+  %div(class='span-6 colborder prepend-1')
+    %h6 Word
+  %div(class='span-15 last')
+    %h6 Tags
+  %hr
+  = render :partial => 'word', :collection => @words
   = will_paginate(@words)
+  %hr.space
+  %h3 Add or Remove a Tagging
   %div(class='span-23 prepend-1 prepend-top append-bottom panel')
     %div(class='span-20 colborder')
       %h6 Select a Tag

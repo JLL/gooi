@@ -1,0 +1,5 @@
+- words = words - [word]
+%h3= word.name
+%div(class='span-24 prepend-top append-bottom panel')
+  %div(class='span-10 colborder prepend-1')= raw(render_random_french_words(words, word))
+  %div(class='span-12 last')= raw(render_random_japanese_words(words, word))

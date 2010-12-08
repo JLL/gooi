@@ -1,0 +1,27 @@
+%h2= params[:id].capitalize
+%h3 Choose a Test
+%div(class='span-24 prepend-top append-bottom panel')
+  %div(class='span-6 colborder prepend-1')
+    %h6 French and Japanese Test
+  %div(class='span-6 colborder')
+    %h6 English and Japanese Test
+  %div(class='span-9 last')
+    %h6 English and French Test
+%hr.space
+= render :partial => 'word', :collection => @words, :locals => {:words => @words}
+%hr.space
+- unless @studies.empty?
+  %h3 Previous Studies
+  - @studies.each do |study|
+    #{study.result} on #{study.created_at}
+    %br
+- unless @last_missed_words.empty?
+  %h3 Last Missed Words
+  %div(class='span-6 colborder prepend-1')
+    %h6 English
+  %div(class='span-6 colborder')
+    %h6 French
+  %div(class='span-9 last')
+    %h6 Japanese
+  %hr
+  = render :partial => 'missed_word', :collection => @last_missed_words

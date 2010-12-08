@@ -16,9 +16,4 @@ class TagsController < ApplicationController
     @tag.destroy unless @tag.nil?
     redirect_to :tags
   end
-  
-  def show
-    @word = Word.new
-    @words = Word.tagged_with(params[:id]).order("id desc").paginate(:page => params[:page], :per_page => 10)
-  end
 end

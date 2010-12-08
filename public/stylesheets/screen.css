@@ -266,14 +266,15 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 /* */
 body {background-color:#eeeeee;}
 select {border: 1px solid #b8b8b8;}
-footer{text-align:center;}
+footer {text-align:center;}
 h1,h2,h3,h4,h5, h6 {color:#00000;}
-h2, h3 {border-bottom: 2px solid #000;box-shadow:0px 1px 0px #ffffff;-moz-box-shadow:0px 1px 0px #ffffff;-webkit-box-shadow:0px 1px 0px #ffffff;}
-h5, h6 {color:#f0000f;}
+h2 {border-bottom: 2px solid #000;box-shadow:0px 1px 0px #ffffff;-moz-box-shadow:0px 1px 0px #ffffff;-webkit-box-shadow:0px 1px 0px #ffffff;}
+h3 {color:#4083A9;}
 a:focus, a:hover {color:#f0000f;text-decoration:underline;}
 a {color:#f0000f;text-decoration:none;}
 .container {margin-top:5px;}
 .panel {background-color:#ffffff;border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;}
+.center {text-align:center;}
 .tag-1 {font-size:0.8em;}
 .tag-2 {font-size:1.0em;}
 .tag-3 {font-size:1.2em;}
