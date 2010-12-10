@@ -1,1 +1,17 @@
-%h2 Please login!
+%h1= image_tag "title.png"
+%div(class="span-24")
+  %div(class="span-7")= image_tag "boo.png"
+  %div(class="span-17 last")
+    %h2 Start your vocabulary training right now
+    - link_to("/auth/facebook") do
+      %div(class="span-8 append-1")
+        %div(class="span-4")= image_tag("facebook.png")
+        %div(class="span-4 prepend-top last")
+          .subtitle Sign in with
+          .title Facebook
+    - link_to("/auth/twitter") do
+      %div(class="span-8 last")
+        %div(class="span-4")= image_tag("twitter.png")
+        %div(class="span-4 prepend-top last")
+          .subtitle Sign in with
+          .title Twitter

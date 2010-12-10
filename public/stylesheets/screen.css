@@ -275,6 +275,8 @@ a {color:#f0000f;text-decoration:none;}
 .container {margin-top:5px;}
 .panel {background-color:#ffffff;border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;}
 .center {text-align:center;}
+.title {color:#4083A9;font-size:1.75em;margin-bottom:0.75em;}
+.subtitle {color:#000000;font-size:1.5em;line-height:1;margin-bottom:1em;}
 .tag-1 {font-size:0.8em;}
 .tag-2 {font-size:1.0em;}
 .tag-3 {font-size:1.2em;}

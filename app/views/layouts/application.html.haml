@@ -7,12 +7,9 @@
     = csrf_meta_tag
     %body
       .container
-        #user_nav(class="right")
-          - if current_user
-            Welcome, #{current_user.name} | #{link_to("Sign out", signout_path)}
-          - else
-            #{link_to("Sign in with Facebook", "/auth/facebook")} | #{link_to("Sign in with Twitter", "/auth/twitter")}
-        = image_tag("logo.png")
+        - if current_user
+          #user_nav(class="right") Welcome, #{current_user.name} | #{link_to("Sign out", signout_path)}
+          = image_tag("logo.png")
         - flash.each do |name, message|
           %div(class="#{name}")= message
         = yield
