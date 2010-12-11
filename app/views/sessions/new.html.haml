@@ -1,0 +1,20 @@
+%div(class="span-7")= image_tag "boo.png"
+%div(class="span-17  prepend-top last")
+  %h1 Start training right now
+  %h3 Learn and improve your vocabulary in English, French and Japanese!
+%hr.space
+%div(class="span-7")= image_tag "gooi.png"
+%div(class="span-17  prepend-top last")
+  - link_to("/auth/facebook") do
+    %div(class="span-8 append-1")
+      %div(class="span-4")= image_tag("facebook.png")
+      %div(class="span-4 prepend-top last")
+        %div(class="x-large black") Sign in with
+        %div(class="xx-large facebook-blue") Facebook
+  - link_to("/auth/twitter") do
+    %div(class="span-8 last")
+      %div(class="span-4")= image_tag("twitter.png")
+      %div(class="span-4 prepend-top last")
+        %div(class="x-large black") Sign in with
+        %div(class="xx-large twitter-blue") Twitter
+%hr.space

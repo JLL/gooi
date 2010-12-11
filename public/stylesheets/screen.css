@@ -269,16 +269,25 @@ select {border: 1px solid #b8b8b8;}
 footer {text-align:center;}
 h1,h2,h3,h4,h5, h6 {color:#00000;}
 h2 {border-bottom: 2px solid #000;box-shadow:0px 1px 0px #ffffff;-moz-box-shadow:0px 1px 0px #ffffff;-webkit-box-shadow:0px 1px 0px #ffffff;}
-h3 {color:#4083A9;}
+h3 {color:#f0000f;}
 a:focus, a:hover {color:#f0000f;text-decoration:underline;}
 a {color:#f0000f;text-decoration:none;}
 .container {margin-top:5px;}
 .panel {background-color:#ffffff;border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;}
-.center {text-align:center;}
-.title {color:#4083A9;font-size:1.75em;margin-bottom:0.75em;}
-.subtitle {color:#000000;font-size:1.5em;line-height:1;margin-bottom:1em;}
+.black {color:#000000;}
+.red {color:#f0000f;}
+.blue {color:#4083a9;}
+.facebook-blue {color:#3b5998;}
+.twitter-blue {color:#2fc2ef;}
+.xx-large {font-size:2em;margin-bottom:0.75em;}
+.x-large {font-size:1.5em;line-height:1;margin-bottom:1em;}
+.tag-0 {font-size:0.8em;}
 .tag-1 {font-size:0.8em;}
 .tag-2 {font-size:1.0em;}
 .tag-3 {font-size:1.2em;}
 .tag-4 {font-size:1.4em;}
 .tag-5 {font-size:1.6em;}
+.tag-6 {font-size:1.8em;}
+.tag-7 {font-size:2.0em;}
+.tag-8 {font-size:2.2em;}
+.tag-9 {font-size:2.4em;}

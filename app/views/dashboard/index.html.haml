@@ -1,17 +1,3 @@
-%h1= image_tag "title.png"
-%div(class="span-24")
-  %div(class="span-7")= image_tag "boo.png"
-  %div(class="span-17 last")
-    %h2 Start your vocabulary training right now
-    - link_to("/auth/facebook") do
-      %div(class="span-8 append-1")
-        %div(class="span-4")= image_tag("facebook.png")
-        %div(class="span-4 prepend-top last")
-          .subtitle Sign in with
-          .title Facebook
-    - link_to("/auth/twitter") do
-      %div(class="span-8 last")
-        %div(class="span-4")= image_tag("twitter.png")
-        %div(class="span-4 prepend-top last")
-          .subtitle Sign in with
-          .title Twitter
+%h2 Dashboard
+- tag_cloud(@tags, %w(tag-0 tag-1 tag-2 tag-3 tag-4 tag-5 tag-6 tag-7 tag-8 tag-9)) do |tag, css_class|
+  = link_to tag.name, "/studies/#{tag.name}", :class => css_class
