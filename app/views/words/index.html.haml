@@ -23,5 +23,5 @@
 %div(class='span-9 last')
   %h6 Japanese
 %hr
-= render :partial => 'word', :collection => @words
+= render @words
 = will_paginate(@words)
